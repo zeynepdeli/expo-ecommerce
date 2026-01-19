@@ -18,5 +18,8 @@
     "express": "^5.2.1",
     "inngest": "^3.49.3",
     "mongoose": "^8.19.3"
+  },
+  "devDependencies": {
+    "inngest-cli": "^1.16.0"
   }
 }
