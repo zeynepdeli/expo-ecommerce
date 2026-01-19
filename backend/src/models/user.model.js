@@ -55,7 +55,8 @@ const userSchema = new mongoose.Schema({
         unique:true,
         required:true,
     },
-    adresses:[addressesSchema],
+    addresses: [addressesSchema],
+
 
     wishlist:[
         {
