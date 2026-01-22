@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { protectRoute, adminOnly } from "../middleware/auth.middlware.js"
+import { protectRoute, adminOnly } from "../middleware/auth.middleware.js"
 import {
   createProduct,
   getAllProducts,
@@ -11,7 +11,10 @@ import {
 } from "../controllers/admin.controller.js";
 
 import { upload } from "../middleware/multer.middleware.js"
+
+
 const router = Router();
+
 
 //optimization - DRY
 router.use(protectRoute, adminOnly)
