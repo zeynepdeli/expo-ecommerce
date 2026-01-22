@@ -1,5 +1,7 @@
 import {Router} from "express"
 import {addAddress,getAddresses,updateAddress,deleteAddress,addToWishlist,removeFromWishlist,getWishlist} from "../controllers/user.controller.js"
+import { protectRoute } from "../middleware/auth.middleware.js";
+
 
 const router = Router();
 
@@ -14,9 +16,9 @@ router.delete("/addresses/:adressId",  deleteAddress)
 
 //wishlist routes
 
-router.post("/wishlish" , addToWishlist)
-router.delete("/wishlish/:productId" , removeFromWishlist)
-router.get("/wishlish" , getWishlist)
+router.post("/wishlist" , addToWishlist)
+router.delete("/wishlist/:productId" , removeFromWishlist)
+router.get("/wishlist" , getWishlist)
 
 export default router
 
