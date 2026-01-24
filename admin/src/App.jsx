@@ -1,10 +1,10 @@
 import { Navigate, Route, Routes } from "react-router";
 import LoginPage from "./pages/LoginPage";
 import { useAuth } from "@clerk/clerk-react";
-import DashboardPage from "./pages/DashboardPage"
+import DashboardPage from "./pages/DashboardPage";
 import ProductsPage from "./pages/ProductPage"
-import OrdersPage from "./pages/OrderPage"
-import CustomersPage from "./pages/CustomersPage"
+import OrdersPage from "./pages/OrdersPage";
+import CustomersPage from "./pages/CustomersPage";
 import DashboardLayout from "./layouts/DashboardLayout";
 
 import PageLoader from "./components/PageLoader";
